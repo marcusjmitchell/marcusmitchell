@@ -1,4 +1,5 @@
 :root {
-    --theme-color: #213687;
+    --theme-color: #fff;
+    background-color: #000;
     background-size: 100%;
 }

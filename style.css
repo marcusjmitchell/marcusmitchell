@@ -1,5 +1,6 @@
 :root {
     font-family: Helvetica, sans-serif;
+    color: var(--theme-color);
 }
 
 #header {
@@ -11,7 +12,6 @@
     align-items: flex-start;
     /*font-family: 'Lucida Sans';*/
     font-size: 100px;
-    color: var(--theme-color);
 }
 
 #navigation {
