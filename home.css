@@ -1,5 +1,30 @@
 :root {
     --theme-color: #fff;
-    background-color: #000;
+    background-color: #222;
     background-size: 100%;
+}
+
+#header {
+    background-image: url("assets/mandelbrot-6-zoom.png");
+    background-size: cover;
+    height: 180pt;
+    margin: 0 auto;
+    color: #0000;
+}
+
+#header h2 {
+    color: #fff;
+    font-size: 48pt;
+    margin-top: -20px;
+    margin-left: 300px;
+}
+
+#profilePicture {
+    display: block;
+    height: 250px; width: 250px;
+    border: 12px solid #222;
+    border-radius: 250px;
+    position: relative;
+    margin-top: -180px;
+    float: left;
 }

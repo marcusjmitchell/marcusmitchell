@@ -1,10 +1,11 @@
 :root {
     font-family: Helvetica, sans-serif;
+    font-size: 12pt;
     color: var(--theme-color);
 }
 
 #header {
-    width: 100%;
+    width: calc(calc(4 / 3) * 100vh);
 }
 
 #titlefsite {
@@ -12,6 +13,8 @@
     align-items: flex-start;
     /*font-family: 'Lucida Sans';*/
     font-size: 100px;
+    margin-top: 80px;
+    margin-bottom: 50px;
 }
 
 #navigation {
@@ -27,6 +30,11 @@
     width: calc(calc(4 / 3) * 100vh);
     display: block;
     margin: 0 auto;
+    padding-left: 12pt; padding-right: 12pt;
+}
+
+#content p {
+    display: inline-block;
 }
 
 #navigation {
@@ -37,7 +45,7 @@
     left: 0px;
     width: 100%;
     z-index: 1;
-    background-color: #222c;
+    background-color: #999c;
 }
 
 #navigation ul {
@@ -114,6 +122,6 @@
     display: block;
     padding: 12px 0;
     background-color: var(--theme-color);
-    color: white;
+    color: black;
     border-radius: 12px; /* rounded corners */
 }
