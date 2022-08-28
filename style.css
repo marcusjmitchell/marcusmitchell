@@ -1,5 +1,5 @@
 :root {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
 }
 
 #header {
@@ -29,46 +29,78 @@
     margin: 0 auto;
 }
 
+#navigation {
+    position: fixed;
+    display: block;
+    margin: 0 0;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 1;
+    background-color: #222c;
+}
+
 #navigation ul {
     list-style-type: none;
     margin: 0 auto;
-    width: 100%;
+    width: auto;
     padding: 0;
     overflow: hidden;
     display: block;
     text-align:center;
 }
 
-#navigation ul li {
-    background-color: #21368700; /* Transparent */
-    margin: 0;
+#navigation ul li:not(#navigation #left-panel ul li) {
+    background-color: #1110;
+    margin: 6px 0px;
     padding: 0;
     display: inline-block;
 }
 
 #navigation ul li a {
     display: block;
-    color: white;
+    color: black;
     border-radius: 12px;
     text-align: center;
     padding: 14px 16px;
+    height: 20px;
     text-decoration: none;
 }
 
-#navigation ul li a:link {
-    background-color: #213687;
+#navigation ul li a:link, #navigation ul li a:visited {
+    background-color: #333;
+    /*background-image: linear-gradient(to right, #444 , #222);*/
+    color: white;
 }
 
-#navigation ul li a:visited {
-    background-color: #213687;
+#navigation ul li a.active:link, #navigation ul li a.active:visited {
+    background-color: white;
+    /*background-image: linear-gradient(to right, #ddd , #aaa);*/
+    color: black;
 }
 
-#navigation ul li a:hover, #navigation ul li a.active {
-    background-color: #909ac3;
+#navigation ul li a:hover {
+    background-color: #555;
+    /*background-image: linear-gradient(to right, #666 , #333);*/
+    color: white;
+}
+
+#navigation ul li a.active:hover {
+    background-color: #aaa;
+    /*background-image: linear-gradient(to right, #bbb , #888);*/
+    color: black;
 }
 
 #navigation ul li a:active {
-    background-color: #909ac3;
+    background-color: #111;
+    /*background-image: linear-gradient(to right, #222 , #111);*/
+    color: white;
+}
+
+#navigation ul li a.active:active {
+    background-color: #ddd;
+    /*background-image: linear-gradient(to right, #fff , #bbb);*/
+    color: black;
 }
 
 #footer {
