@@ -1,5 +1,9 @@
 :root {
-    --theme-color: red;
-    background-image: url('/sus.jpg');
+    --theme-color: #fff;
+    background-color: #222;
     background-size: 100%;
+}
+
+#header {
+    background-image: url("assets/mandelbrot-6-zoom.png");
 }

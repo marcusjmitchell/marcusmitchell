@@ -16,7 +16,6 @@ body {
     height: calc(var(--header-height) + 24px);
     padding: 0;
     margin: 0 auto;
-    color: #0000;
     border-left: 2px solid white; border-right: 2px solid white;
     padding-left: 12pt; padding-right: 12pt;
 }
