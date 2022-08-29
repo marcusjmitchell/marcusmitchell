@@ -15,3 +15,14 @@
 #content {
     padding-top: calc(calc(var(--header-height) / 2) + 24px);
 }
+
+.pageclip-form button {
+    border: none;
+    color: black;
+    background-color: white;
+    border-radius: 6px;
+    height: 36px;
+    width: 48px;
+    padding: 0;
+    display: inline-block;
+}
