@@ -16,6 +16,10 @@
     padding-top: calc(calc(var(--header-height) / 2) + 24px);
 }
 
+.pageclip-form input {
+    display: inline-block;
+}
+
 .pageclip-form button {
     border: none;
     color: black;
