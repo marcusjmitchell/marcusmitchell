@@ -19,15 +19,20 @@
 .pageclip-form input {
     display: inline-block;
     height: 24px;
+    width: 300px
+}
+
+.pageclip-form textarea {
+    display: inline-block;
 }
 
 .pageclip-form button {
     border: none;
     color: black;
     background-color: white;
-    border-radius: 6px;
     height: 24px;
     width: 48px;
+    border-radius: 6px;
     padding: 0;
     display: inline-block;
 }
