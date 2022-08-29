@@ -2,10 +2,41 @@
     font-family: Helvetica, sans-serif;
     font-size: 12pt;
     color: var(--theme-color);
+    --header-height: 206px;
+}
+
+body {
+    margin: 0px;
 }
 
 #header {
     width: calc(calc(4 / 3) * 100vh);
+    display: block;
+    background-size: cover;
+    height: calc(var(--header-height) + 24px);
+    padding: 0;
+    margin: 0 auto;
+    color: #0000;
+    border-left: 2px solid white; border-right: 2px solid white;
+    padding-left: 12pt; padding-right: 12pt;
+}
+
+#header h2 {
+    color: #fff;
+    font-size: 56pt;
+    padding-top: calc(var(--header-height) + 24pt);
+    display: block;
+    margin: 0;
+}
+
+#profilePicture {
+    display: block;
+    height: calc(var(--header-height) + 24px); width: calc(var(--header-height) + 24px);
+    border: 12px solid #222;
+    border-radius: 250px;
+    margin-top: calc(var(--header-height) / 2);
+    position: relative;
+    float: left;
 }
 
 #titlefsite {
@@ -13,39 +44,17 @@
     align-items: flex-start;
     /*font-family: 'Lucida Sans';*/
     font-size: 100px;
-    margin-top: 80px;
-    margin-bottom: 50px;
 }
 
 #navigation {
-    position: fixed;
     display: block;
     margin: 0 auto;
-    top: 12px;
-    width: 100%;
-    z-index: 1;
-}
-
-#content {
-    width: calc(calc(4 / 3) * 100vh);
-    display: block;
-    margin: 0 auto;
-    padding-left: 12pt; padding-right: 12pt;
-}
-
-#content p {
-    display: inline-block;
-}
-
-#navigation {
-    position: fixed;
-    display: block;
-    margin: 0 0;
     top: 0px;
     left: 0px;
-    width: 100%;
+    width: calc(calc(4 / 3) * 100vh);
     z-index: 1;
-    background-color: #999c;
+    border-left: 2px solid white; border-right: 2px solid white;
+    padding-left: 12pt; padding-right: 12pt;
 }
 
 #navigation ul {
@@ -109,6 +118,26 @@
     background-color: #ddd;
     /*background-image: linear-gradient(to right, #fff , #bbb);*/
     color: black;
+}
+
+#content {
+    width: calc(calc(4 / 3) * 100vh);
+    display: block;
+    margin: 0 auto;
+    padding-left: 12pt; padding-right: 12pt;
+    border-width: 2px;
+    border-style: solid;
+    border-image-slice: 1 4 7 3 6 9;
+    border-image: linear-gradient(
+        to bottom, 
+        white, 
+        white, 
+        #fff0
+    ) 1 100%;
+}
+
+#content p {
+    display: inline-block;
 }
 
 #footer {
