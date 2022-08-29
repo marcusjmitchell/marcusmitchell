@@ -23,7 +23,6 @@ body {
 #header h2 {
     color: #fff;
     font-size: 56pt;
-    padding-top: calc(var(--header-height) + 24pt);
     display: block;
     margin: 0;
 }
@@ -42,7 +41,8 @@ body {
     text-align: center;
     align-items: flex-start;
     /*font-family: 'Lucida Sans';*/
-    font-size: 100px;
+    margin: 0px;
+    font-size: var(--header-height);
 }
 
 #navigation {
