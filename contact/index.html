@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact Me</title>
+        <link href="contact.css" type="text/css" rel="stylesheet">
+        <link href="/style.css" type="text/css" rel="stylesheet">
+        <meta charset="UTF-8" name="Marcus Mitchell" content="Marcus Mitchell's Website"> <!--
+        <meta name="description" content="Website for bell baxter">
+        <meta name="tags" content="Phillip Black, Carol-Ann Penrose, Bell Baxter, Bell Baxter High School" /> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="This is my website">
+        <meta name="keywords" content="This is my website">
+        <meta name="author" content="Marcus Mitchell's Website">
+        
+        <meta name="robots" content="INDEX, FOLLOW">
+        
+        <meta name="rating" content="General">
+        <meta name="revisit-after" content="2 days">
+
+        <!-- Open Graph meta tags-->
+        <meta property="og:title" content="Marcus Mitchell's Website" />
+        <meta property="og:type" content="Website" />
+        <meta property="og:url" content="https://marcusmitchell.co.uk/" />
+         <!--<meta property="og:image" content="xxxx" />-->
+        <meta property="og:description" content="This is my website" />
+
+        <!--<link rel="shortcut icon" type="image/png" href="xxxx"/> -->
+    </head>
+    <body>
+        <div id="container">
+            <div id="navigation">
+				<ul>
+					<li>
+						<a href="/">
+							Home
+						</a>
+					</li>
+					<li>
+						<a href="/maths">
+							Maths
+						</a>
+					</li>
+                    <li>
+                        <a href="/physics">
+                            Physics
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/cs">
+                            Computer Science
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/hobbies">
+                            Hobbies & Interests
+                        </a>
+                    </li>
+                    <li>
+                        <a class="active" href="#">
+                            Contact
+                        </a>
+                    </li>
+				</ul>
+            </div>
+            <div id="header">
+                <!-- <h1 id="titlefsite">Marcus Mitchell's Website</h1>-->
+                <img src="assets/headshot.png" id="profilePicture">
+                <h2>Marcus Mitchell's Blog</h2>
+            </div>
+            <p>
+                Mobile: 
+                E-mail: mail@marcusmitchell.co.uk
+            </p>
+            <form action="mailto:mail@marcusmitchell.co.uk" method="get" enctype="text/plain">
+                <div>
+                    <label for="name">Name:
+                        <input type="text" name="name" id="name" />
+                    </label>
+                </div>
+                <div>
+                    <label for="email">E-mail:
+                        <input type="text" name="email" id="email" />
+                    </label>
+                </div>
+                <div>
+                    <label>Message:</label>
+                    <br />
+                    <textarea name="comments" rows="12" cols="35">Enter your message here.</textarea>
+                </div>
+                <div>
+                    <input type="submit" name="submit" value="Send" />
+                    <input type="reset" name="reset" value="Reset Form" />
+                </div>
+            </form>
+            </div>
+            <div id="footer">
+                <p>Marcus Mitchell</p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,13 @@
+:root {
+    --theme-color: #fff;
+    background-color: #222;
+    background-size: 100%;
+}
+
+#header {
+    background-image: url("assets/mandelbrot-6-zoom.png");
+}
+
+#header h2 {
+    padding-top: calc(var(--header-height) + 24pt);
+}

@@ -139,6 +139,18 @@ body {
     display: inline-block;
 }
 
+#content p a:link {
+    color: white;
+}
+
+#content p a:hover {
+    color: #bbb;
+}
+
+#content p a:active {
+    color: white;
+}
+
 #footer {
     width: 100%;
 }
