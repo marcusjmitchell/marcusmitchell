@@ -151,6 +151,10 @@ body {
     color: white;
 }
 
+#content p a:visited {
+    color: white;
+}
+
 #footer {
     width: 100%;
 }
