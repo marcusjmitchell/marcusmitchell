@@ -31,7 +31,7 @@
     <body>
         <div id="container">
             <div id="navigation">
-				<ul>
+				<ul id="pri-nav">
 					<li>
 						<a href="/">
 							Home
@@ -63,6 +63,38 @@
                         </a>
                     </li>
 				</ul>
+				<ul id="sec-nav">
+					<li>
+						<a href="/hobbies/climbing">
+							Climbing
+						</a>
+					</li>
+					<li>
+						<a href="/hobbies/beer">
+							Beer
+						</a>
+					</li>
+                    <li>
+                        <a href="/hobbies/whisky">
+                            Whisky
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/cs">
+                            Computer Science
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/hobbies">
+                            Hobbies & Interests
+                        </a>
+                    </li>
+                    <li>
+                        <a class="active" href="#">
+                            Contact
+                        </a>
+                    </li>
+				</ul>
             </div>
             <div id="header">
                 <!-- <h1 id="titlefsite">Marcus Mitchell's Website</h1>-->
@@ -71,14 +103,14 @@
             </div>
             <div id="content">
                 <p>
-                    Mobile: (+44) 7497 370 602
+                    Mobile: +44 7497 370 602
                 </p>
                 <br>
                 <p>
                     E-mail: <a href="mailto:mail@marcusmitchell.co.uk">mail@marcusmitchell.co.uk</a>
                 </p>
                 <br>
-                <form action="https://send.pageclip.co/GnVIaG0JLqW9stnQIUToqQcu5vmLNaWf" class="pageclip-form" method="post">
+                <form action="https://send.pageclip.co/GnVIaG0JLqW9stnQIUToqQcu5vmLNaWf" class="pageclip-form" method="post"> <!-- https://pageclip.co/site/marcus-mitchell -->
                     <!-- Replace these inputs with your own. Make sure they have a "name" attribute! -->
                     <input type="text" name="name" value="" placeholder="Name" width=200px />
                     <br>
@@ -97,6 +129,18 @@
                 <p>Marcus Mitchell</p>
             </div>
         </div>
+        <script>
+            document.getElementById("pri-nav").addEventListener("mouseover", showSec);
+            document.getElementById("navigation").addEventListener("mouseout", hideSec);
+            
+            function showSec() {
+                document.getElementById("sec-nav").style.visibility = "visible";
+            }
+            
+            function hideSec() {
+                document.getElementById("sec-nav").style.visibility = "hidden";
+            }
+        </script>
         <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
     </body>
 </html>
