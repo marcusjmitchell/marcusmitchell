@@ -52,18 +52,18 @@
                             Computer Science
                         </a>
                     </li>
-                    <li>
+                    <li id="hobbies">
                         <a href="/hobbies">
                             Hobbies & Interests
                         </a>
                     </li>
                     <li>
-                        <a class="active" href="#">
+                        <a class="active" href="/contact">
                             Contact
                         </a>
                     </li>
 				</ul>
-				<ul id="sec-nav">
+				<ul id="hobbies-nav">
 					<li>
 						<a href="/hobbies/climbing">
 							Climbing
@@ -80,18 +80,8 @@
                         </a>
                     </li>
                     <li>
-                        <a href="/cs">
+                        <a href="/hobbies/whisky">
                             Computer Science
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/hobbies">
-                            Hobbies & Interests
-                        </a>
-                    </li>
-                    <li>
-                        <a class="active" href="#">
-                            Contact
                         </a>
                     </li>
 				</ul>
@@ -130,15 +120,15 @@
             </div>
         </div>
         <script>
-            document.getElementById("pri-nav").addEventListener("mouseover", showSec);
-            document.getElementById("navigation").addEventListener("mouseout", hideSec);
+            document.getElementById("hobbies").addEventListener("mouseover", showHobbies);
+            document.getElementById("navigation").addEventListener("mouseout", hideHobbies);
             
-            function showSec() {
-                document.getElementById("sec-nav").style.visibility = "visible";
+            function showHobbies() {
+                document.getElementById("hobbies-nav").style.display = "block";
             }
             
-            function hideSec() {
-                document.getElementById("sec-nav").style.visibility = "hidden";
+            function hideHobbies() {
+                document.getElementById("hobbies-nav").style.display = "none";
             }
         </script>
         <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>

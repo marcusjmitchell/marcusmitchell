@@ -62,12 +62,15 @@ body {
     width: auto;
     padding: 0;
     overflow: hidden;
-    display: block;
     text-align:center;
 }
 
-#navigation ul li:not(#pri-nav) {
-    visibility: hidden;
+#navigation ul#pri-nav {
+    display: block;
+}
+
+#navigation ul:not(#pri-nav) {
+    display: none;
 }
 
 #navigation ul li {
