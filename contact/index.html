@@ -30,7 +30,7 @@
     </head>
     <body>
         <div id="container">
-            <div id="navigation">
+            <div id="navigation" onmouseout="hideHobbies();">
 				<ul id="pri-nav">
 					<li>
 						<a href="/">
@@ -52,7 +52,7 @@
                             Computer Science
                         </a>
                     </li>
-                    <li id="hobbies">
+                    <li id="hobbies" onmouseover="showHobbies();">
                         <a href="/hobbies">
                             Hobbies & Interests
                         </a>
@@ -120,9 +120,6 @@
             </div>
         </div>
         <script>
-            document.getElementById("hobbies").addEventListener("mouseover", showHobbies);
-            document.getElementById("hobbies-nav").addEventListener("mouseout", hideHobbies);
-            
             function showHobbies() {
                 document.getElementById("hobbies-nav").style.display = "block";
             }
