@@ -59,18 +59,11 @@ body {
 #navigation ul {
     list-style-type: none;
     margin: 0 auto;
+    display: block;
     width: auto;
     padding: 0;
     overflow: hidden;
     text-align:center;
-}
-
-#navigation ul#pri-nav {
-    display: block;
-}
-
-#navigation ul:not(#pri-nav) {
-    display: none;
 }
 
 #navigation ul li {

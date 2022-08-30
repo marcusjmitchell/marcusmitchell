@@ -1,0 +1,26 @@
+:root {
+    --theme-color: #fff;
+    background-color: #222;
+    background-size: 100%;
+}
+
+#header {
+    background-image: url("/assets/mandelbrot-6-zoom.png");
+}
+
+#header h2 {
+    padding-top: calc(var(--header-height) + 24pt);
+}
+
+#content {
+    padding-top: calc(calc(var(--header-height) / 2) + 24px);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.grid label {
+    text-align: center;
+}
