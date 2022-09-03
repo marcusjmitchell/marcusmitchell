@@ -23,6 +23,7 @@
 
 .grid a {
     text-decoration: none;
+    color: black;
 }
 
 .grid div {
@@ -43,4 +44,5 @@
     text-align: center;
     display: block;
     font-size: 24pt;
+    padding-bottom: 12px;
 }
