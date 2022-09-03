@@ -22,6 +22,10 @@
 }
 
 .grid a {
+    text-decoration: none;
+}
+
+.grid div {
     background-color: white;
     color: black;
     margin: 6px;
