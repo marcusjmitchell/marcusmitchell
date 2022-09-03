@@ -19,6 +19,7 @@
 .grid {
     display: inline-grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
 }
 
 .grid a {
@@ -30,7 +31,7 @@
 .grid div {
     background-color: white;
     color: black;
-    margin: 6px;
+    margin: 0px;
     border-radius: 12px;
 }
 

@@ -162,9 +162,10 @@ body {
 #footer p {
     width: calc(calc(4 / 3) * 100vh);
     text-align: center;
-    margin: 6px auto;
+    box-sizing: border-box;
+    margin: 12px auto;
     display: block;
-    padding: 12px 0;
+    padding: 12px 6px;
     background-color: var(--theme-color);
     color: black;
     border-radius: 12px; /* rounded corners */
