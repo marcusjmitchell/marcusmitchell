@@ -165,7 +165,7 @@ body {
     box-sizing: border-box;
     margin: 12px auto;
     display: block;
-    padding: 12px 6px;
+    padding: 12px;
     background-color: var(--theme-color);
     color: black;
     border-radius: 12px; /* rounded corners */
