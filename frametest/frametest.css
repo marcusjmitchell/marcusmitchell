@@ -48,7 +48,11 @@ body {
     border-left: 2px solid var(--theme-color);
     border-top: 2px solid var(--theme-color);
     border-bottom: 2px solid var(--theme-color);
-    border-radius: 20px 0 0 20px;
+    border-radius: 0 20px 20px 0;
+}
+
+.righty * {
+    padding-left: calc(50vw - calc(calc(2 / 3) * 100vh))
 }
 
 #header h1 {
