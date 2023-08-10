@@ -2,4 +2,179 @@
     --theme-color: #fff;
     background-color: #222;
     background-size: 100%;
+    font-family: Helvetica, sans-serif;
+    font-size: 12pt;
+    color: var(--theme-color);
+    --header-height: 206px;
+}
+
+body {
+    margin: 0px;
+}
+
+#container {
+    width: 100vw;
+}
+
+#header {
+    width: calc(calc(calc(2 / 3) * 100vh) + 50vw); /* was:calc(calc(4 / 3) * 100vh). This now is a mean for style reasons*/
+    display: block;
+    float:right;
+    background-size: cover;
+    height: calc(var(--header-height) + 24px);
+    padding: 0;
+    margin: 0 auto;
+    border-left: 2px solid white; border-right: 2px solid white;
+    padding-left: 12pt; padding-right: 12pt;
+}
+
+#header h2 {
+    color: #fff;
+    font-size: 56pt;
+    display: block;
+    margin: 0;
+}
+
+#profilePicture {
+    display: block;
+    height: calc(var(--header-height) + 24px); width: calc(var(--header-height) + 24px);
+    border: 12px solid #222;
+    border-radius: 250px;
+    margin-top: calc(var(--header-height) / 2);
+    position: relative;
+    float: left;
+}
+
+#titlefsite {
+    text-align: center;
+    align-items: flex-start;
+    /*font-family: 'Lucida Sans';*/
+    margin: 0px;
+    font-size: var(--header-height);
+}
+
+#navigation {
+    display: block;
+    margin: 0 auto;
+    top: 0px;
+    left: 0px;
+    width: calc(calc(4 / 3) * 100vh);
+    z-index: 1;
+    border-left: 2px solid white; border-right: 2px solid white;
+    padding-left: 12pt; padding-right: 12pt;
+}
+
+#navigation ul {
+    list-style-type: none;
+    margin: 0 auto;
+    display: block;
+    width: auto;
+    padding: 0;
+    overflow: hidden;
+    text-align:center;
+}
+
+#navigation ul li {
+    background-color: #1110;
+    margin: 6px 0px;
+    padding: 0;
+    display: inline-block;
+}
+
+#navigation ul li a {
+    display: block;
+    color: black;
+    border-radius: 12px;
+    text-align: center;
+    padding: 14px 16px;
+    height: 20px;
+    text-decoration: none;
+}
+
+#navigation ul li a:link, #navigation ul li a:visited {
+    background-color: #333;
+    /*background-image: linear-gradient(to right, #444 , #222);*/
+    color: white;
+}
+
+#navigation ul li a.active:link, #navigation ul li a.active:visited {
+    background-color: white;
+    /*background-image: linear-gradient(to right, #ddd , #aaa);*/
+    color: black;
+}
+
+#navigation ul li a:hover {
+    background-color: #555;
+    /*background-image: linear-gradient(to right, #666 , #333);*/
+    color: white;
+}
+
+#navigation ul li a.active:hover {
+    background-color: #aaa;
+    /*background-image: linear-gradient(to right, #bbb , #888);*/
+    color: black;
+}
+
+#navigation ul li a:active {
+    background-color: #111;
+    /*background-image: linear-gradient(to right, #222 , #111);*/
+    color: white;
+}
+
+#navigation ul li a.active:active {
+    background-color: #ddd;
+    /*background-image: linear-gradient(to right, #fff , #bbb);*/
+    color: black;
+}
+
+#content {
+    width: calc(calc(4 / 3) * 100vh);
+    display: block;
+    margin: 0 auto;
+    padding-left: 12pt; padding-right: 12pt;
+    border-width: 2px;
+    border-style: solid;
+    border-image-slice: 1 4 7 3 6 9;
+    border-image: linear-gradient(
+        to bottom, 
+        white, 
+        white, 
+        #fff0
+    ) 1 100%;
+}
+
+#content p {
+    display: inline-block;
+}
+
+#content p a:link {
+    color: white;
+}
+
+#content p a:hover {
+    color: #bbb;
+}
+
+#content p a:active {
+    color: white;
+}
+
+#content p a:visited {
+    color: white;
+}
+
+#footer {
+    width: 100%;
+}
+
+#footer p {
+    width: calc(calc(4 / 3) * 100vh);
+    text-align: center;
+    box-sizing: border-box;
+    margin: 12px auto;
+    display: block;
+    padding: 12px;
+    background-color: var(--theme-color);
+    color: black;
+    border-radius: 12px; /* rounded corners */
 }
