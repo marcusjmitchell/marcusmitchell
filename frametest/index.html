@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Friends & Connections</title>
+        <link href="flextest.css" type="text/css" rel="stylesheet">
+        <link href="/style.css" type="text/css" rel="stylesheet">
+        <meta charset="UTF-8" name="Marcus Mitchell" content="Marcus Mitchell's Website">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="This is my website">
+        <meta name="keywords" content="This is my website">
+        <meta name="author" content="Marcus Mitchell's Website">
+        
+        <meta name="robots" content="INDEX, FOLLOW">
+        
+        <meta name="rating" content="General">
+        <meta name="revisit-after" content="2 days">
+
+        <!-- Open Graph meta tags-->
+        <meta property="og:title" content="Marcus Mitchell's Website" />
+        <meta property="og:type" content="Website" />
+        <meta property="og:url" content="https://marcusmitchell.co.uk/" />
+         <!--<meta property="og:image" content="xxxx" />-->
+        <meta property="og:description" content="This is my website" />
+
+        <!--<link rel="shortcut icon" type="image/png" href="xxxx"/> -->
+
+        <script>
+            function BodyLoad() {
+                var nonJSNotice = document.getElementById("non-js");
+                nonJSNotice.style.display = "none";
+            }
+        </script>
+    </head>
+    <body onload="BodyLoad()">
+        <div id="container">
+            <div id="navigation">
+				<ul>
+					<li>
+						<a href="/">
+							Home
+						</a>
+					</li>
+                    <li id="hobbies">
+                        <a href="/hobbies">
+                            Hobbies & Interests
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/connections">
+                            Connections
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/contact">
+                            Contact
+                        </a>
+                    </li>
+				</ul>
+            </div>
+            <div id="header">
+                <!-- <h1 id="titlefsite">Marcus Mitchell's Website</h1>-->
+                <img src="/assets/misc/headshot.jpg" id="profilePicture">
+                <h2>Friends & Connections</h2>
+            </div>
+            <div id="content">
+                <div class="grid">
+                    <div>
+                        <a href="https://oliverbunting.co.uk">
+                            <img src="/assets/connections/oliver.jpg">
+                            <label>Oliver Bunting</label>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="/assets/headshotSquare.png">
+                            <label>Minions</label>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="/assets/headshotSquare.png">
+                            <label>Minions</label>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <p>Marcus Mitchell cannot control the content of external sites. Please take any concerns to the "Contact" page of this website or send an email to <a href="mailto:mail@marcusmitchell.co.uk">mail@marcusmitchell.co.uk</a>.</p>
+                <p id="non-js">You are viewing the javascript-disabled version of this website.</p>
+            </div>
+        </div>
+    </body>
+</html>
