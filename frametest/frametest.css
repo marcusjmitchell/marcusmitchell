@@ -58,24 +58,6 @@ body {
     margin: 0;
 }
 
-#profilePicture {
-    display: block;
-    height: calc(var(--header-height) + 24px); width: calc(var(--header-height) + 24px);
-    border: 12px solid #222;
-    border-radius: 250px;
-    margin-top: calc(var(--header-height) / 2);
-    position: relative;
-    float: left;
-}
-
-#titlefsite {
-    text-align: center;
-    align-items: flex-start;
-    /*font-family: 'Lucida Sans';*/
-    margin: 0px;
-    font-size: var(--header-height);
-}
-
 #navigation {
     display: block;
     margin: 0 auto;
@@ -151,19 +133,8 @@ body {
 }
 
 #content {
-    width: calc(calc(4 / 3) * 100vh);
-    display: block;
-    margin: 0 auto;
-    padding-left: 12pt; padding-right: 12pt;
-    border-width: 2px;
-    border-style: solid;
-    border-image-slice: 1 4 7 3 6 9;
-    border-image: linear-gradient(
-        to bottom, 
-        white, 
-        white, 
-        #fff0
-    ) 1 100%;
+    color: var(--theme-color);
+    background-color: var(--alt-color);
 }
 
 #content p {
