@@ -21,6 +21,23 @@ body {
 #header {
     color: var(--alt-color);
     background-color: var(--theme-color);
+}
+
+.lefty {
+    width: calc(calc(calc(2 / 3) * 100vh) + 50vw); /* was:calc(calc(4 / 3) * 100vh). This now is a mean for style reasons*/
+    display: block;
+    float: left;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    padding: 0;
+    border-right: 2px solid var(--theme-color);
+    border-top: 2px solid var(--theme-color);
+    border-bottom: 2px solid var(--theme-color);
+    border-radius: 20px 0 0 20px;
+}
+
+.righty {
     width: calc(calc(calc(2 / 3) * 100vh) + 50vw); /* was:calc(calc(4 / 3) * 100vh). This now is a mean for style reasons*/
     display: block;
     float: right;
@@ -28,16 +45,16 @@ body {
     padding: 0;
     margin: 0;
     padding: 0;
-    border-left: 2px solid white;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
+    border-left: 2px solid var(--theme-color);
+    border-top: 2px solid var(--theme-color);
+    border-bottom: 2px solid var(--theme-color);
     border-radius: 20px 0 0 20px;
 }
 
 #header h1 {
     font-size: var(--header-title-textsixe);
     display: block;
-    padding: var(--header-title-padding) 0;
+    padding: var(--header-title-padding);
     margin: 0;
 }
 
