@@ -8,7 +8,8 @@
     font-size: 12pt;
     --header-title-padding: 12pt;
     --header-title-textsixe: 56pt;
-    --text-padding: 12px;
+    --text-padding: 12pt;
+    --text-top-padding: 0pt;
 }
 
 body {
@@ -25,7 +26,7 @@ body {
 }
 
 .lefty {
-    width: calc(calc(calc(2 / 3) * 100vh) + 50vw); /* was:calc(calc(4 / 3) * 100vh). This now is a mean for style reasons*/
+    width: 80vw; /* was:calc(calc(4 / 3) * 100vh). This now is a mean for style reasons*/
     display: block;
     float: left;
     background-size: cover;
@@ -39,7 +40,7 @@ body {
 }
 
 .righty {
-    width: calc(calc(calc(2 / 3) * 100vh) + 50vw); /* was:calc(calc(4 / 3) * 100vh). This now is a mean for style reasons*/
+    width: 80vw; /* was:calc(calc(4 / 3) * 100vh). This now is a mean for style reasons*/
     display: block;
     float: right;
     background-size: cover;
@@ -52,11 +53,14 @@ body {
 }
 
 .lefty * {
-    padding-left: calc(calc(50vw - calc(calc(2 / 3) * 100vh)) + var(--text-padding));
+    padding-left: calc(20vw + var(--text-padding));
+    padding-right: var(--text-padding);
+    padding-top: var(--text-top-padding);
+    padding-bottom: var(--text-top-padding);
 }
 
 .righty p {
-    padding: var(--text-padding)
+    padding: var(--text-padding);
 }
 
 #header h1 {
@@ -167,17 +171,19 @@ body {
 #footer {
     width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: 0%;
+    padding: 0 calc(var(--text-padding) / 2);
 }
 
 #footer p {
-    width: calc(calc(4 / 3) * 100vh);
+    width: 60vw;
     text-align: center;
-    box-sizing: border-box;
-    margin: 12px auto;
+    margin: 0;
+    margin-left: calc(20vw - calc(var(--text-padding) / 2));
     display: block;
-    padding: 12px;
+    padding: 8pt 0;
     background-color: var(--theme-color);
-    color: black;
+    color: var(--alt-color);
     border-radius: 12px; /* rounded corners */
+    border: 1px solid var(--theme-color);
 }
