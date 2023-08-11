@@ -8,6 +8,7 @@
     font-size: 12pt;
     --header-title-padding: 12pt;
     --header-title-textsixe: 56pt;
+    --text-padding: 12px;
 }
 
 body {
@@ -34,7 +35,7 @@ body {
     border-right: 2px solid var(--theme-color);
     border-top: 2px solid var(--theme-color);
     border-bottom: 2px solid var(--theme-color);
-    border-radius: 20px 0 0 20px;
+    border-radius: 0 20px 20px 0;
 }
 
 .righty {
@@ -44,15 +45,18 @@ body {
     background-size: cover;
     padding: 0;
     margin: 0;
-    padding: 0;
     border-left: 2px solid var(--theme-color);
     border-top: 2px solid var(--theme-color);
     border-bottom: 2px solid var(--theme-color);
-    border-radius: 0 20px 20px 0;
+    border-radius: 20px 0 0 20px;
 }
 
-.righty * {
-    padding-left: calc(50vw - calc(calc(2 / 3) * 100vh))
+.lefty * {
+    padding-left: calc(calc(50vw - calc(calc(2 / 3) * 100vh)) + var(--text-padding));
+}
+
+.righty p {
+    padding: var(--text-padding)
 }
 
 #header h1 {
@@ -137,6 +141,7 @@ body {
 }
 
 #content {
+    margin: 12pt 0;
     color: var(--theme-color);
     background-color: var(--alt-color);
 }
@@ -163,6 +168,8 @@ body {
 
 #footer {
     width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 
 #footer p {
