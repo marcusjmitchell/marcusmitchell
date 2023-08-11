@@ -146,6 +146,8 @@ body {
     margin: 12pt 0;
     color: var(--theme-color);
     background-color: var(--alt-color);
+    height: 80vh;
+    overflow: scroll;
 }
 
 #content p {
@@ -169,7 +171,7 @@ body {
 }
 
 #footer {
-    position: absolute;
+    position: fixed;
     bottom: 6pt;
     margin: 0 6pt;
     padding: 0 calc(var(--text-padding) / 2);
