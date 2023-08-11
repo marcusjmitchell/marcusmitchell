@@ -16,9 +16,9 @@ body {
     margin: 0px;
 }
 
-#container {
+/*#container {
     width: 100vw;
-}
+}*/
 
 #header {
     color: var(--alt-color);
@@ -75,7 +75,7 @@ body {
     margin: 0 auto;
     top: 0px;
     left: 0px;
-    width: calc(calc(4 / 3) * 100vh);
+    width: 60vw;
     z-index: 1;
 }
 
@@ -171,13 +171,14 @@ body {
 #footer {
     position: absolute;
     bottom: 6pt;
+    margin: 0 6pt;
     padding: 0 calc(var(--text-padding) / 2);
 }
 
 #footer p {
     width: 60vw;
     text-align: center;
-    margin: 0;
+    margin: 0 6pt;
     margin-left: calc(20vw - calc(var(--text-padding) / 2));
     display: block;
     padding: 8pt 0;
