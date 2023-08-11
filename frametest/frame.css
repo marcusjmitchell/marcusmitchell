@@ -169,9 +169,8 @@ body {
 }
 
 #footer {
-    width: 100%;
     position: absolute;
-    bottom: 0%;
+    bottom: 6pt;
     padding: 0 calc(var(--text-padding) / 2);
 }
 
