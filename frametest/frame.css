@@ -53,14 +53,14 @@ body {
 }
 
 .lefty * {
-    padding-left: calc(calc(100vw - max(80vw, 720px)) + var(--text-padding));
+    padding-left: calc(((100vw - min((min(90vw, max(80vw, 720px)) - (100vw - max(80vw, 720px))), 90vw)) / 2) + var(--text-padding) / 2);
     padding-right: var(--text-padding);
     padding-top: var(--text-top-padding);
     padding-bottom: var(--text-top-padding);
 }
 
 .righty p {
-    padding: var(--text-padding);
+    padding: var(--text-top-padding) var(--text-padding);
 }
 
 #header h1 {
