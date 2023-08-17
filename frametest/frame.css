@@ -6,7 +6,7 @@
     background-size: 100%;
     font-family: Helvetica, sans-serif;
     font-size: 12pt;
-    --header-title-padding: 16pt;
+    --header-title-padding: 12pt;
     --header-title-textsixe: 56pt;
     --text-padding: 12pt;
     --text-top-padding: 0pt;
@@ -35,7 +35,7 @@ body {
     border-right: 2px solid var(--theme-color);
     border-top: 2px solid var(--theme-color);
     border-bottom: 2px solid var(--theme-color);
-    border-radius: 0 20px 20px 0;
+    border-radius: 0 12px 12px 0;
 }
 
 .righty {
@@ -48,7 +48,7 @@ body {
     border-left: 2px solid var(--theme-color);
     border-top: 2px solid var(--theme-color);
     border-bottom: 2px solid var(--theme-color);
-    border-radius: 20px 0 0 20px;
+    border-radius: 12px 0 0 12px;
 }
 
 .lefty * {
@@ -145,7 +145,7 @@ body {
     margin: 12pt 0;
     color: var(--theme-color);
     background-color: var(--alt-color);
-    height: 72vh;
+    height: calc( 83vh - calc(calc(var(--header-title-padding) + var(--header-title-textsixe)) + calc(var(--text-top-padding) + 12pt)));
     overflow-y: auto;
     scrollbar-width: 10px; /* Works on Firefox */
     scrollbar-color: #fff #222;
