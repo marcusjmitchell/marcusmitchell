@@ -6,7 +6,7 @@
     background-size: 100%;
     font-family: Helvetica, sans-serif;
     font-size: 12pt;
-    --header-title-padding: 12pt;
+    --header-title-padding: 16pt;
     --header-title-textsixe: 56pt;
     --text-padding: 12pt;
     --text-top-padding: 0pt;
@@ -30,9 +30,8 @@ body {
     display: block;
     float: left;
     background-size: cover;
-    padding: 0;
     margin: 0;
-    padding: 0;
+    padding: 0 calc(var(--text-padding) / 2);
     border-right: 2px solid var(--theme-color);
     border-top: 2px solid var(--theme-color);
     border-bottom: 2px solid var(--theme-color);
@@ -205,10 +204,10 @@ body {
 #footer p {
     width: 60vw;
     text-align: center;
-    margin: 0 6pt;
+    margin: 0;
     margin-left: calc(20vw - calc(var(--text-padding) / 2));
     display: block;
-    padding: 8pt 0;
+    padding: 8pt calc(var(--text-padding) / 4);
     background-color: var(--theme-color);
     color: var(--alt-color);
     border-radius: 12px; /* rounded corners */
