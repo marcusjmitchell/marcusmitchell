@@ -8,7 +8,7 @@
     font-size: 12pt;
     --header-title-padding: 12pt;
     --header-title-side-padding: 14pt;
-    --header-title-textsixe: 56pt;
+    --header-title-textsixe: 48pt;
     --text-padding: 12pt;
     --text-top-padding: 0pt;
 }
@@ -199,7 +199,7 @@ body {
 #footer {
     position: fixed;
     bottom: 6pt;
-    margin: 0;
+    margin: 4px 0;
     padding: 0;
 }
 
