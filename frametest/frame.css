@@ -147,7 +147,7 @@ body {
     color: var(--theme-color);
     background-color: var(--alt-color);
     height: 72vh;
-    overflow-y: scroll;
+    overflow-y: auto;
     scrollbar-width: 10px; /* Works on Firefox */
     scrollbar-color: #fff #222;
     scroll-margin: 20px;
