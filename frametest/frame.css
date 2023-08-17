@@ -40,7 +40,7 @@ body {
 }
 
 .righty {
-    width: 80vw; /* was:calc(calc(4 / 3) * 100vh). This now is a mean for style reasons*/
+    width: calc(80vw - 10px); /* was:calc(calc(4 / 3) * 100vh). This now is a mean for style reasons*/
     display: block;
     float: right;
     background-size: cover;
