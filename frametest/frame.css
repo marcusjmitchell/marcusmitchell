@@ -27,7 +27,7 @@ body {
 }
 
 .lefty {
-    width: 80vw; /* was:calc(calc(4 / 3) * 100vh). This now is a mean for style reasons*/
+    width: calc(50vw + 0.5 * (min(calc(min(90vw, max(80vw, 720px)) - calc(100vw - max(80vw, 720px))), 90vw)) - var(--text-padding) / 2); /* was:calc(calc(4 / 3) * 100vh). This now is a mean for style reasons*/
     display: block;
     float: left;
     background-size: cover;
@@ -40,7 +40,7 @@ body {
 }
 
 .righty {
-    width: calc(80vw - 10px); /* was:calc(calc(4 / 3) * 100vh). This now is a mean for style reasons*/
+    width: calc(50vw + 0.5 * (min(calc(min(90vw, max(80vw, 720px)) - calc(100vw - max(80vw, 720px))), 90vw)) + var(--text-padding) / 2);
     display: block;
     float: right;
     background-size: cover;
@@ -53,7 +53,7 @@ body {
 }
 
 .lefty * {
-    padding-left: calc(20vw + var(--text-padding));
+    padding-left: calc(calc(100vw - max(80vw, 720px)) + var(--text-padding));
     padding-right: var(--text-padding);
     padding-top: var(--text-top-padding);
     padding-bottom: var(--text-top-padding);
@@ -75,8 +75,9 @@ body {
     margin: 0 auto;
     top: 0px;
     left: 0px;
-    width: 60vw;
+    width: 100vw;
     z-index: 1;
+    overflow: hidden;
 }
 
 #navigation ul {
@@ -146,7 +147,7 @@ body {
     margin: 12pt 0;
     color: var(--theme-color);
     background-color: var(--alt-color);
-    height: calc( 83vh - calc(calc(var(--header-title-padding) + var(--header-title-textsixe)) + calc(var(--text-top-padding) + 12pt)));
+    height: calc( 100vh - calc(calc(calc(var(--header-title-padding) * 2) + var(--header-title-textsixe)) + calc(calc(2 * var(--text-top-padding)) + 120pt)));
     overflow-y: auto;
     scrollbar-width: 10px; /* Works on Firefox */
     scrollbar-color: #fff #222;
@@ -198,17 +199,16 @@ body {
 #footer {
     position: fixed;
     bottom: 6pt;
-    margin: 0 6pt;
-    padding: 0 calc(var(--text-padding) / 2);
+    margin: 0;
+    padding: 0;
 }
 
 #footer p {
-    width: 60vw;
+    width: min(calc(min(90vw, max(80vw, 720px)) - calc(100vw - max(80vw, 720px))), 90vw);
     text-align: center;
-    margin: 0;
-    margin-left: calc(20vw - calc(var(--text-padding) / 2));
+    margin: 0 calc(((100vw - min((min(90vw, max(80vw, 720px)) - (100vw - max(80vw, 720px))), 90vw)) / 2) - var(--text-padding) / 2);
     display: block;
-    padding: 8pt calc(var(--text-padding) / 4);
+    padding: 8pt calc(var(--text-padding)/2);
     background-color: var(--theme-color);
     color: var(--alt-color);
     border-radius: 12px; /* rounded corners */
