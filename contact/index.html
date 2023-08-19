@@ -29,7 +29,7 @@
         <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
         
         <!-- ReCaptcha stuffs -->
-        <script src="https://www.google.com/recaptcha/api.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
         <script>
             function onSubmit(token) {
                 document.getElementById("pageclip-form").submit();
@@ -88,6 +88,8 @@
                 </p>
                 <br>
                 <form action="https://send.pageclip.co/GnVIaG0JLqW9stnQIUToqQcu5vmLNaWf" class="pageclip-form" method="post" id="pageclip-form"> <!-- https://pageclip.co/site/marcus-mitchell -->
+                    <div class="g-recaptcha" data-sitekey="6LfH-LonAAAAAK1k3oiObu03hopqXhgrMKPNBeAt"></div>
+                    <br>
                     <!-- Replace these inputs with your own. Make sure they have a "name" attribute! -->
                     <input type="text" name="name" value="" placeholder="Name" width=200px />
                     <br>
@@ -95,12 +97,12 @@
                     <br>
                     <textarea name="message" rows="16" cols="90" placeholder="Your message here"></textarea>
                     <br>
-                    <!--<button type="submit" class="pageclip-form__submit">
-                        <span>Send</span>
-                    </button>-->
-                    <button type="submit" class="pageclip-form__submit g-recaptcha" data-sitekey="6Lea57onAAAAAJdfQGpCN4rO5GzyR76MorocLqox" data-callback='onSubmit' data-action='submit'>
+                    <button type="submit" class="pageclip-form__submit">
                         <span>Send</span>
                     </button>
+                    <!--<button type="submit" class="pageclip-form__submit g-recaptcha" data-sitekey="6Lea57onAAAAAJdfQGpCN4rO5GzyR76MorocLqox" data-callback='onSubmit' data-action='submit'>
+                        <span>Send</span>
+                    </button> ///// old recaptcha v3 stuff-->
                     
                     <!-- This button will have a loading spinner. Keep the inner span for best results. -->
                 </form>
