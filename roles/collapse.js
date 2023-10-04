@@ -10,7 +10,7 @@ for (i = 0; i < coll.length; i++) {
     } else {
       content.style.maxHeight = content.scrollHeight + "px";
       var parent = this.parentElement;
-      parent.style.maxHeight = parent.scrollHeight + "px";
+      parent.style.maxHeight = content.scrollHeight + parent.scrollHeight + "px";
     }
   });
 }
