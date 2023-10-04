@@ -106,11 +106,11 @@
 
 /* Style the collapsible content. Note: hidden by default */
 .content {
-    padding: 3px 12px;
+    padding: 0px 12px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    margin-bottom: 4px;
+    margin-bottom: 12px;
     border-radius: 00 0 12px 12px;
 }
 
