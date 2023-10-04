@@ -22,7 +22,7 @@
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
     font-family: Helvetica, sans-serif;
-    background-color: #333;
+    background-color: #fff;
     color: #444;
     cursor: pointer;
     padding: 18px;
@@ -32,6 +32,7 @@
     outline: none;
     font-size: 12pt;
     font-weight: bold;
+    margin: 4px;
 }
 
 /* Add a background color to the button if it is clicked on (add the .revealed class with JS), and when you move the mouse over it (hover) */
