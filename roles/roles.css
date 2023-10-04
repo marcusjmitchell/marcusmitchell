@@ -107,10 +107,17 @@
 /* Style the collapsible content. Note: hidden by default */
 .content {
     padding: 0 18px;
-    background-color: var(--background-secondary);
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     margin-bottom: 4px;
     border-radius: 00 0 12px 12px;
+}
+
+.content-primary {
+    background-color: var(--background-secondary);
+}
+
+.content-secondary {
+    background-color: var(--background);
 }

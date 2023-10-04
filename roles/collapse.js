@@ -9,8 +9,17 @@ for (i = 0; i < coll.length; i++) {
       content.style.maxHeight = null;
     } else {
       content.style.maxHeight = content.scrollHeight + "px";
-      var parent = this.parentElement;
-      parent.style.maxHeight = content.scrollHeight + parent.scrollHeight + "px";
+      recursiveShow(this);
     }
   });
+}
+
+function recursiveShow(element) {
+    var parent = element.parentElement
+    if (parent.className == "content") {
+        parent.style.maxHeight = element.scrollHeight + parent.scrollHeight + "px";
+        return recursiveShow(parent);
+    } else {
+        return 0
+    }
 }
