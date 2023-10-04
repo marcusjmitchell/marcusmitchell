@@ -7,7 +7,7 @@
     --accent: #8de9d3;
     background-color: var(--background);
     background-size: 100%;
-    text-color: var(--theme-color);
+    color: var(--theme-color);
 }
 
 ::selection {
