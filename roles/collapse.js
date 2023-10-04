@@ -20,6 +20,6 @@ function recursiveShow(element) {
         parent.style.maxHeight = element.scrollHeight + parent.scrollHeight + "px";
         return recursiveShow(parent);
     } else {
-        return 0
+        return 0;
     }
 }
