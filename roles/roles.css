@@ -1,7 +1,41 @@
 :root {
     --theme-color: #fff;
-    background-color: #222;
+    --background: #110010;
+    --background-secondary: #330030;
+    --primary: #60cfff;
+    --secondary: #210426;
+    --accent: #8de9d3;
+    background-color: var(--background);
     background-size: 100%;
+    text-color: var(--theme-color);
+}
+
+::selection {
+    background-color: var(--accent);
+    color: #000;
+}
+
+/*** Mozilla based browsers ***/
+::-moz-selection {
+    background-color: var(--accent);
+    color: #000;
+}
+
+/***For Other Browsers ***/
+::-o-selection {
+    background-color: var(--accent);
+    color: #000;
+}
+
+::-ms-selection {
+    background-color: var(--accent);
+    color: #000;
+}
+
+/*** For Webkit ***/
+::-webkit-selection {
+    background-color: var(--accent);
+    color: #000;
 }
 
 #header {
@@ -22,8 +56,8 @@
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
     font-family: Helvetica, sans-serif;
-    background-color: #fff;
-    color: #444;
+    background-color: var(--primary);
+    color: #000;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -32,12 +66,26 @@
     outline: none;
     font-size: 12pt;
     font-weight: bold;
-    margin: 4px;
+    margin-top: 4px;
+    transition: background-color 0.2s linear;
+    border-radius: 12px;
+    transition: border-radius 0.2s ease-in-out;
 }
 
 /* Add a background color to the button if it is clicked on (add the .revealed class with JS), and when you move the mouse over it (hover) */
-.revealed, .collapsible:hover {
-    background-color: #ccc;
+.revealed {
+    background-color: var(--accent);
+    border-radius: 12px 12px 0 0;
+    transition: background-color 0.2s linear;
+}
+
+.collapsible:hover {
+    background-color: var(--accent);
+    transition: background-color 0.2s linear;
+}
+
+.revealed:hover {
+    background-color: #fff;
 }
 
 .collapsible:after {
@@ -55,8 +103,10 @@
 /* Style the collapsible content. Note: hidden by default */
 .content {
     padding: 0 18px;
-    background-color: #333;
+    background-color: var(--background-secondary);
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+    margin-bottom: 4px;
+    border-radius: 00 0 12px 12px;
 }

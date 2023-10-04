@@ -30,7 +30,7 @@ body {
 #profilePicture {
     display: block;
     height: calc(var(--header-height) + 24px); width: calc(var(--header-height) + 24px);
-    border: 12px solid #222;
+    border: 12px solid var(--background);
     border-radius: 250px;
     margin-top: calc(var(--header-height) / 2);
     position: relative;
