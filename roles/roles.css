@@ -97,7 +97,7 @@
     color: black;
     font-weight: bold;
     float: right;
-    margin-left: 5px;
+    margin-left: 6px;
 }
   
 .revealed:after {
@@ -111,7 +111,7 @@
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     margin-bottom: 12px;
-    border-radius: 00 0 12px 12px;
+    border-radius: 0 0 12px 12px;
 }
 
 /*** bump ***/
