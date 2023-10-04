@@ -77,15 +77,19 @@
     background-color: var(--accent);
     border-radius: 12px 12px 0 0;
     transition: background-color 0.2s linear;
+    transition: border-radius 0.2s ease-in-out;
 }
 
 .collapsible:hover {
     background-color: var(--accent);
     transition: background-color 0.2s linear;
+    transition: border-radius 0.2s ease-in-out;
 }
 
 .revealed:hover {
     background-color: #fff;
+    transition: background-color 0.2s linear;
+    transition: border-radius 0.2s ease-in-out;
 }
 
 .collapsible:after {
