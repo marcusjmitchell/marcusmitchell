@@ -15,7 +15,7 @@ for (i = 0; i < coll.length; i++) {
 }
 
 function recursiveShow(element) {
-    var parent = element.parentElement
+    var parent = element.parentElement;
     if (parent.className == "content") {
         parent.style.maxHeight = element.scrollHeight + parent.scrollHeight + "px";
         return recursiveShow(parent);
