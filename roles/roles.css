@@ -1,4 +1,4 @@
-:root {
+/*:root {
     --theme-color: #fff;
     --background: #110010;
     --background-secondary: #330030;
@@ -8,7 +8,7 @@
     background-color: var(--background);
     background-size: 100%;
     color: var(--theme-color);
-}
+}*/
 
 ::selection {
     background-color: var(--accent);
