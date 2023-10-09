@@ -76,6 +76,7 @@
 .revealed {
     background-color: var(--accent);
     border-radius: 12px 12px 0 0;
+    margin-bottom: 0px;
     transition: background-color 0.2s linear;
     transition: border-radius 0.2s ease-in-out;
 }
