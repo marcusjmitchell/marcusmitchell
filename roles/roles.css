@@ -76,7 +76,6 @@
 .revealed {
     background-color: var(--accent);
     border-radius: 12px 12px 0 0;
-    margin-bottom: 0px;
     transition: background-color 0.2s linear;
     transition: border-radius 0.2s ease-in-out;
 }
@@ -111,7 +110,7 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    margin-bottom: 12px;
+    margin: 0;
     border-radius: 0 0 12px 12px;
 }
 
