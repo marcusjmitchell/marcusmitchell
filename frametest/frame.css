@@ -220,20 +220,3 @@ body {
     border-radius: 12px; /* rounded corners */
     border: 1px solid var(--theme-color);
 }
-
-#footer-spacer {
-    color: var(--alt-color);
-    background-color: var(--alt-color);
-    margin: 4px 0 6px 0;
-    padding: 0;
-    z-index: -1;
-}
-
-#footer-spacer p {
-    width: min(calc(min(90vw, max(80vw, 720px)) - calc(100vw - max(80vw, 720px))), 90vw);
-    text-align: center;
-    margin: 0 calc(((100vw - min((min(90vw, max(80vw, 720px)) - (100vw - max(80vw, 720px))), 90vw)) / 2) - var(--text-padding) / 2);
-    display: block;
-    padding: 12px calc(var(--text-padding)/2);
-    border: 1px solid var(--alt-color);
-}
