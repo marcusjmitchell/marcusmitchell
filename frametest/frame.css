@@ -59,8 +59,11 @@ body {
     padding-bottom: var(--text-top-padding);
 }
 
-.righty p {
-    padding: var(--text-top-padding) var(--text-padding);
+.righty * {
+    padding-top: var(--text-top-padding);
+    padding-right: calc(((100vw - min((min(90vw, max(80vw, 720px)) - (100vw - max(80vw, 720px))), 90vw)) / 2) + var(--text-padding) / 2);
+    padding-bottom: var(--text-top-padding);
+    padding-left: var(--text-padding);
 }
 
 #header h1 {
