@@ -73,7 +73,7 @@ body {
 
 #navigation {
     display: block;
-    margin: 0 auto;
+    margin: 8px auto;
     top: 0px;
     left: 0px;
     width: 100vw;
@@ -145,10 +145,10 @@ body {
 }
 
 #content {
-    margin: 12pt 0;
+    margin: 16px 0;
     color: var(--theme-color);
     background-color: var(--alt-color);
-    max-height: calc( 100vh - calc(calc(calc(var(--header-title-padding) * 2) + var(--header-title-textsixe)) + calc(calc(2 * var(--text-top-padding)) + 170px)));
+    max-height: calc( 100vh - calc(calc(calc(var(--header-title-padding) * 2) + var(--header-title-textsixe)) + calc(calc(2 * var(--text-top-padding)) + 188px)));
     overflow-y: auto;
     scrollbar-width: 10px; /* Works on Firefox */
     scrollbar-color: #fff #222;
