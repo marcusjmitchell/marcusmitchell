@@ -148,7 +148,7 @@ body {
     margin: 16px 0;
     color: var(--theme-color);
     background-color: var(--alt-color);
-    max-height: calc( 100vh - calc(calc(calc(var(--header-title-padding) * 2) + var(--header-title-textsixe)) + calc(calc(2 * var(--text-top-padding)) + 188px)));
+    height: calc( 100vh - calc(calc(calc(var(--header-title-padding) * 2) + var(--header-title-textsixe)) + calc(calc(2 * var(--text-top-padding)) + 188px)));
     overflow-y: auto;
     scrollbar-width: 10px; /* Works on Firefox */
     scrollbar-color: #fff #222;
