@@ -207,13 +207,13 @@ body {
 #footer p {
     width: min(calc(min(90vw, max(80vw, 720px)) - calc(100vw - max(80vw, 720px))), 90vw);
     text-align: center;
-    margin: 0 calc(((100vw - min((min(90vw, max(80vw, 720px)) - (100vw - max(80vw, 720px))), 90vw)) / 2) - var(--text-padding) / 2);
+    margin: 0 calc(((100vw - min((min(90vw, max(80vw, 720px)) - (100vw - max(80vw, 720px))), 90vw)) / 2) - var(--text-padding) / 2 - 4px);
     display: block;
-    padding: 8pt calc(var(--text-padding)/2);
+    padding: 12px calc(var(--text-padding)/2);
     background-color: var(--theme-color);
     color: var(--alt-color);
     border-radius: 12px; /* rounded corners */
-    border: 1px solid var(--theme-color);
+    border: 6px solid var(--alt-color);
 }
 
 #footer-spacer {
@@ -227,8 +227,8 @@ body {
 #footer-spacer p {
     width: min(calc(min(90vw, max(80vw, 720px)) - calc(100vw - max(80vw, 720px))), 90vw);
     text-align: center;
-    margin: 0 calc(((100vw - min((min(90vw, max(80vw, 720px)) - (100vw - max(80vw, 720px))), 90vw)) / 2) - var(--text-padding) / 2);
+    margin: 0 calc(((100vw - min((min(90vw, max(80vw, 720px)) - (100vw - max(80vw, 720px))), 90vw)) / 2) - var(--text-padding) / 2 - 4px);
     display: block;
-    padding: 8pt calc(var(--text-padding)/2);
-    border: 1px solid var(--alt-color);
+    padding: 12px calc(var(--text-padding)/2);
+    border: 6px solid var(--alt-color);
 }
