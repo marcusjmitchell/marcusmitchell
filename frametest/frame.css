@@ -148,7 +148,7 @@ body {
     margin: 16px 0;
     color: var(--theme-color);
     background-color: var(--alt-color);
-    height: calc( 100vh - calc(calc(calc(var(--header-title-padding) * 2) + var(--header-title-textsixe)) + calc(calc(2 * var(--text-top-padding)) + 188px)));
+    height: calc( 100vh - calc(calc(calc(var(--header-title-padding) * 2) + var(--header-title-textsixe)) + calc(calc(2 * var(--text-top-padding)) + 180px)));
     overflow-y: auto;
     scrollbar-width: 10px; /* Works on Firefox */
     scrollbar-color: #fff #222;
@@ -202,18 +202,19 @@ body {
     bottom: 6pt;
     margin: 4px 0;
     padding: 0;
+    z-index: 1;
 }
 
 #footer p {
     width: min(calc(min(90vw, max(80vw, 720px)) - calc(100vw - max(80vw, 720px))), 90vw);
     text-align: center;
-    margin: 0 calc(((100vw - min((min(90vw, max(80vw, 720px)) - (100vw - max(80vw, 720px))), 90vw)) / 2) - var(--text-padding) / 2 - 4px);
+    margin: 0 calc(((100vw - min((min(90vw, max(80vw, 720px)) - (100vw - max(80vw, 720px))), 90vw)) / 2) - var(--text-padding) / 2);
     display: block;
     padding: 12px calc(var(--text-padding)/2);
     background-color: var(--theme-color);
     color: var(--alt-color);
     border-radius: 12px; /* rounded corners */
-    border: 6px solid var(--alt-color);
+    border: 1px solid var(--theme-color);
 }
 
 #footer-spacer {
@@ -227,8 +228,8 @@ body {
 #footer-spacer p {
     width: min(calc(min(90vw, max(80vw, 720px)) - calc(100vw - max(80vw, 720px))), 90vw);
     text-align: center;
-    margin: 0 calc(((100vw - min((min(90vw, max(80vw, 720px)) - (100vw - max(80vw, 720px))), 90vw)) / 2) - var(--text-padding) / 2 - 4px);
+    margin: 0 calc(((100vw - min((min(90vw, max(80vw, 720px)) - (100vw - max(80vw, 720px))), 90vw)) / 2) - var(--text-padding) / 2);
     display: block;
     padding: 12px calc(var(--text-padding)/2);
-    border: 6px solid var(--alt-color);
+    border: 1px solid var(--alt-color);
 }
